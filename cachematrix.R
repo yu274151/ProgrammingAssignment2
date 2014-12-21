@@ -41,7 +41,7 @@ makeCacheMatrix <- function (x = matrix()) {
 	## I utilized this source for reference : http://www.sosmath.com/matrix/inverse/inverse.html
 	## Also, R det function is used to obtain the determinant.	
 
-	if (det(x) != 0){
+	if (det(x) == 0){
 	
 	stop("non-invertible matrix") ##program execution halts with the error message
 	
